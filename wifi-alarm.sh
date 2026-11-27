@@ -8,10 +8,6 @@ cleanup() {
 
 trap cleanup SIGINT SIGTERM # sigint = interrupt, sigterm = termination
 
-echo "___________"
-echo "wifi check"
-echo "__________"
-
 while true; do
 	STATUS=$(curl -sS -o /dev/null -w "%{http_code}" --max-time 8 https://connectivitycheck.gstatic.com/generate_204 2>/dev/null)
 	if [[ "$STATUS" == "204" ]]; then

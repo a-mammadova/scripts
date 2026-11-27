@@ -13,11 +13,11 @@ echo "-----------------------------------------"
 echo "FUCKIN PRIORITIES!!!"
 echo "-----------------------------------------"
 echo
-echo "[ ] sync engine"
+echo "[ ] syncy"
 echo "[ ] saa"
-echo "[ ] master planning"
-echo "[ ] linkzip"
-echo "[ ] stalk davud'\''s notes"
+echo "[ ] master roadmap"
+echo "[ ] stalk tener'\''s notes"
+echo "[ ] uni mini projects"
 echo
 
 for i in {10..1}; do
