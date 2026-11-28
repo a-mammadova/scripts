@@ -1,5 +1,5 @@
 INTERVAL=60
-SOUND="$HOME/Music/two faced - linkin park.mp3"
+SOUND="$HOME/Music/too many humans - buckethead.mp3"
 
 cleanup() {
 	echo
@@ -16,16 +16,7 @@ while true; do
 		echo "time: $(date)"
 
 		for i in {1..3}; do
-            		if command -v mpv &>/dev/null && [[ -f "$SOUND" ]]; then
-                		mpv --no-video --really-quiet "$SOUND"
-            		elif command -v pw-play &>/dev/null && [[ -f "$SOUND" ]]; then
-                		pw-play "$SOUND"
-            		elif command -v paplay &>/dev/null && [[ -f "$SOUND" ]]; then
-                		paplay "$SOUND"
-            		else
-                		echo -e '\a'
-                		sleep 1
-            		fi
+                    pw-play "$SOUND"
         	done
 
         	notify-send "wifi works again" 2>/dev/null
